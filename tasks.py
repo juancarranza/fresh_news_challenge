@@ -161,6 +161,7 @@ def process(search_phrase:str, category_section:str, months_number:int):
         logging.error("Error"+str(e)+". Screenshot: "+path_screenshot)
         browser.close_all_browsers
         logging.info("[Tasks.py][process] - Except Method has ended.")
+        raise Exception(e)
 
 # Main function
 if __name__ == "__main__":
